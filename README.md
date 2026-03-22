@@ -45,11 +45,14 @@ docker-compose up -d --build
 
 ### 2. Access service
 
+```bash
 http://<EC2-PUBLIC-IP>
-
+```
 or 
 
+```bash
 http://localhost
+```
 
 ---
 
