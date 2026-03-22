@@ -18,10 +18,8 @@ This project evolves from a single-container Flask application to a multi-servic
 
 ## Architecture
 
-Client → EC2:5002 → Nginx (container) → Web Service (container)
+Client → EC2 → Nginx (container) → Web Service (container)
 
-
-- External access via port **5002**
 - Nginx routes traffic to the internal service
 - Containers communicate via Docker network
 
@@ -43,14 +41,15 @@ Client → EC2:5002 → Nginx (container) → Web Service (container)
 
 ```bash
 docker-compose up -d --build
+```
 
 ### 2. Access service
 
-http://<EC2-PUBLIC-IP>:5002
+http://<EC2-PUBLIC-IP>
 
 or 
 
-http://localhost:5002
+http://localhost
 
 ---
 

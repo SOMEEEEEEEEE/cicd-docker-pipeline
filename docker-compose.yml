@@ -1,4 +1,4 @@
-version: "3.9"
+version: '3.9'
 
 services:
   web-demo:
@@ -10,7 +10,7 @@ services:
     image: nginx:latest
     container_name: nginx-proxy
     ports:
-      - "5002:80"
+      - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
     depends_on:
